@@ -8,4 +8,4 @@
 ;; Confluence is cool, lets use it!
 (require 'confluence)
 (setq confluence-url "https://wiki.opscode.com/rpc/xmlrpc")
-(global-set-key "\C-xwf" 'confluence-get-page)
+(global-set-key "\C-cc" 'confluence-get-page)

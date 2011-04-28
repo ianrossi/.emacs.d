@@ -32,27 +32,6 @@
 ;; This module is available at Google Code:
 ;;
 ;;   http://code.google.com/p/confluence-el/
-;;
-;; INSTALLATION 
-;;
-;; You must set confluence-url in your .emacs file before using the
-;; functions in this module.  It's best to place confluence.el and
-;; xml-rpc.el on your load path; often ~/.emacs.d or ~/elisp.
-;;
-;; Some examples:
-;;
-;;   ;; loading xml-rpc.el may not be necessary, it depends on your
-;;   ;; installed version of Emacs, it was necessary on 22.1.1.
-;;   ;; Both xml-rpc.el and confluence.el should be on your load-path.
-;;
-;;   (require 'confluence)
-;;   (setq confluence-url "http://intranet/confluence/rpc/xmlrpc")
-;;
-;; USING CONFLUENCE MODE
-;;
-;; To open a page, M-x confluence-get-page and enter the path to the
-;; page, for example, to open a page in your home space: ~username/Tasks
-;;
 ;; It is often convienient to bind this to a global key \C-xwf in your .emacs file:
 ;;   
 ;;    (global-set-key "\C-xwf" 'confluence-get-page)

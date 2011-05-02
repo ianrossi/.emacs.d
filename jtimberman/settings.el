@@ -28,9 +28,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; cool gist tricks
-(require 'gist)
-
 ;; markdown for certain files
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))

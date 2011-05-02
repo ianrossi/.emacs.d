@@ -55,8 +55,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Confluence mode with sane longlines
 (require 'confluence)
-;;(setq confluence-url "https://wiki.opscode.com/rpc/xmlrpc")
-(setq confluence-url "https://wiki.corp.opscode.com/rpc/xmlrpc")
+
 (global-set-key "\C-cg" 'confluence-get-page)
 (global-set-key "\C-cs" 'confluence-search)
 

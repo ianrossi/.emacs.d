@@ -38,6 +38,11 @@
 (setq auto-mode-alist (cons '("\\.txt" . markdown-mode) auto-mode-alist))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; maxframe
+(require 'maxframe)
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; rvm and ruby
 (require 'rvm)
 (rvm-use-default)

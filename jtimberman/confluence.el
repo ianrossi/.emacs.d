@@ -1993,9 +1993,9 @@ basic entities."
 
 (defface confluence-code-face
   '((((class color) (background dark))
-     (:foreground "dim gray" :bold t))
+     (:foreground "black" :bold t))
     (((class color) (background light))
-     (:foreground "dim gray"))
+     (:foreground "DarkGray"))
     (t (:bold t)))
   "Font Lock Mode face used for code in confluence pages.")
 
@@ -2003,9 +2003,9 @@ basic entities."
 
 (defface confluence-panel-face
   '((((class color) (background dark))
-     (:background "LightGray"))
+     (:background "black"))
     (((class color) (background light))
-     (:background "LightGray"))
+     (:background "DarkGray"))
     (t nil))
   "Font Lock Mode face used for panel in confluence pages.")
 

@@ -14,7 +14,9 @@
 ;; Some useful default settings
 (setq standard-indent 2)
 (setq-default indent-tabs-mode nil)
-(line-number-mode 1)
+(require 'linum)
+(global-linum-mode 1)
+(setq linum-format "%d ")
 (setq ring-bell-function 'ignore)
 (setq inhibit-startup-message t)
 (global-set-key "\C-cc" 'comment-region)

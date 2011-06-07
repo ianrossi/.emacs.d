@@ -61,7 +61,8 @@
 ;; http://www.emacswiki.org/emacs/ruby-block.el
 (require 'ruby-block)
 (ruby-block-mode t)
-
+;; don't use the deep indentations, ffs.
+(setq ruby-deep-indent-paren nil)
 ;; Rake files are ruby, too, as are gemspecs, rackup files, etc.
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))

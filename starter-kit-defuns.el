@@ -73,10 +73,6 @@ Symbols matching the text at point are put first in the completion list."
   (make-local-variable 'column-number-mode)
   (column-number-mode t))
 
-(defun local-comment-auto-fill ()
-  (set (make-local-variable 'comment-auto-fill-only-comments) t)
-  (auto-fill-mode t))
-
 (defun turn-on-hl-line-mode ()
   (when (> (display-color-cells) 8) (hl-line-mode t)))
 
@@ -98,7 +94,6 @@ Symbols matching the text at point are put first in the completion list."
           1 font-lock-warning-face t))))
 
 (add-hook 'coding-hook 'local-column-number-mode)
-(add-hook 'coding-hook 'local-comment-auto-fill)
 (add-hook 'coding-hook 'turn-on-hl-line-mode)
 (add-hook 'coding-hook 'turn-on-save-place-mode)
 (add-hook 'coding-hook 'pretty-lambdas)

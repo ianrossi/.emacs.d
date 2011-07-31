@@ -1,3 +1,4 @@
+(server-start)
 ;; path sanity
 (when (equal system-type 'darwin)
   (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
